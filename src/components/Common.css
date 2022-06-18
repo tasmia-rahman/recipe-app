@@ -1,0 +1,72 @@
+section {
+  margin-top: 20px;
+}
+.single-recipe {
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.single-recipe img {
+  width: 100%;
+  height: 100%;
+}
+.single-recipe p {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 0%);
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(0.7);
+  background: linear-gradient(35deg, #494949, #313131);
+}
+.link.active {
+  background: linear-gradient(to right, #f27121, #e94057);
+}
+
+.cuisine-list h4 {
+  color: white;
+  font-size: 0.8rem;
+}
+.cuisine-list svg {
+  color: white;
+  font-size: 1.5rem;
+}
