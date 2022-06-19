@@ -1,0 +1,32 @@
+.recipe-container {
+  display: flex;
+  justify-content: center;
+}
+.recipe-container h3 {
+  margin: 20px 0;
+}
+
+.recipe-container img {
+  height: 45vh;
+}
+.info {
+  margin: 30px 0px 10px 80px;
+}
+.btn-group {
+  margin: 30px 50px 0;
+}
+.btn-group button {
+  padding: 10px 40px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+.btn-group button.active {
+  background: linear-gradient(35deg, #494949, #313131);
+  color: white;
+}
+.info p,
+.info ul {
+  text-align: justify;
+  margin: 30px;
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../components/Common.css";
 
 const Searched = () => {
@@ -24,9 +24,11 @@ const Searched = () => {
         const { id, image, title } = item;
         return (
           <div className="single-recipe" key={id}>
-            <img src={image} alt={title} />
-            <p>{title}</p>
-            <div className="gradient"></div>
+            <Link to={"/recipe/" + id}>
+              <img src={image} alt={title} />
+              <p>{title}</p>
+              <div className="gradient"></div>
+            </Link>
           </div>
         );
       })}
