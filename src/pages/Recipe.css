@@ -4,13 +4,16 @@
 }
 .recipe-container h3 {
   margin: 20px 0;
+  width: 330px;
 }
 
 .recipe-container img {
   height: 45vh;
 }
+
 .info {
   margin: 30px 0px 10px 80px;
+  width: 50%;
 }
 .btn-group {
   margin: 30px 50px 0;
